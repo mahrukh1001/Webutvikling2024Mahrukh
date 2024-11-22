@@ -1,0 +1,29 @@
+header{
+    background-image:url(https://image.shutterstock.com/image-photo/background-stars-space-galaxy-600nw-2498545637.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-orientation: upright;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    justify-content: start;
+    padding: 5px;
+}
+nav ul li a{
+    text-decoration: none; /* Fjerner understreking fra lenker */
+    color: inherit /* Beholder arvet farge */
+}
+
+/* Bruker hover for å legge til understreking */
+nav ul li a:hover {
+    text-decoration: underline;
+}
