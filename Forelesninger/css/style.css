@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* fjerner hvit margin som er standard */
+
+}
+
+#container{
+    display: flex; /* legger seg på en rad, default oppførsel for flex*/
+    flex-wrap: wrap;
+}
+
+header, nav, footer{
+    width: 100%;
+}
+
+header, nav, main, aside, footer {
+    flex-grow: 1; /* Dere skal få lov til å vokse til 1 av hva som er tilgjengelig av plass.
+    Siden du er den eneste på den raden */
+    padding: 1rem;
+}
+header{
+    background-color: palevioletred;
+}
+nav{
+    background-color: rgb(223, 78, 55);
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between; 
+    gap: 35px;
+
+}
+main{
+    display: flex;
+    flex-wrap: wrap; /*  Få en vane å skriv dette etter display flex.
+    for da faller ting under hverandre når det ikke er plass. */
+    background-color: rgb(50, 206, 241);
+    width:70%;
+    min-width:500px ; /* du kanke bli mindre enn det her. tenk på de som bruker tlf */
+    justify-content: space-between; /*bruk padding hvis du vil ha mer luft */
+    
+}
+
+main h2{
+    /* da tar den 100% av hele plassen */
+    width: 100%ß;
+}
+main article{
+    width: 30%;
+    min-width: 250px;
+    flex-grow: 1;
+
+}
+aside{
+    background-color: rgb(177, 102, 247);
+    width:30%;
+}
+footer{
+    color: #fff;
+    background-color: crimson;
+}

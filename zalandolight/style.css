@@ -1,0 +1,131 @@
+html {
+  font-size: calc(1em + 1vw); /* Setter grunnstørrelsen på teksten */
+}
+
+body{
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{font-size: 2rem;}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.4rem;}
+p,a{font-size: 1rem;}
+
+
+img{
+    width: 100%;
+    max-width: 400px;
+}
+
+#main-logo{
+    width: 100%;
+    max-width: 250px;
+    margin: 0px auto;
+    display: block;
+}
+
+#banner{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #efefef;
+  justify-content: space-between;
+
+  img{
+    max-width: 70%;
+  }
+}
+#banner div{
+  width: 30%;
+  padding: 2rem;
+}
+
+#banner div h2{
+  font-size: 1rem;
+}
+
+.flex-menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    a{text-decoration: none;
+    color: #000}
+  }
+
+
+
+  /* .flex-menu a{
+    text-decoration: none;
+    color: #000;
+  } */
+
+  .flex-space-b{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+  }
+
+.flex-space-b form{
+    position: relative;
+}
+
+  .flex-space-b form label{
+    visibility: hidden;
+    position: absolute;
+    
+  }
+  #outlet{
+    color: #ff0000;
+  }
+
+/* desktop */
+  @media only screen and (min-width:800px){
+    .fa-burger{
+      display: none;
+    }
+    #menu{
+      display: flex !important;
+    }
+    h3{font-size: 1.2rem;}
+    p, av{font-size: 0.8rem;}
+
+
+
+/*mobil*/
+
+@media only screen and (max-width:800px){
+
+}
+  #menu{
+    display: none
+  }
+
+  #grid-container{
+      grid-template-columns: 1fr ;
+      grid-template-rows: auto auto auto auto;
+  }
+  #header, main, aside, footer{
+      grid-column: 1/2;
+  }
+  header{
+      grid-row: 1/2;
+  }
+  main{
+      grid-row: 2/3;
+  }
+  aside{
+      display: none;
+  }
+  footer {
+      grid-row: 3/4;
+  }
+
+  }
+
