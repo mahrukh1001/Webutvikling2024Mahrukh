@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Kasse</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <form class="search-form">
+                <label for="search">Søk</label>
+                <input type="search" placeholder="Søk..." id="søk">
+                <input type="submit" value="search">
+            </form>
+            <nav class="meny">
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><img src="home-icon.png" alt="Hjem"></a>
+                <a href="#"><img src="favorites-icon.png" alt="Favoritter"></a>
+                <a href="#"><img src="customer-service-icon.png" alt="Kundeservice"></a>
+                <a href="checkout.html"><img src="ikoner/shopping.cart.png" alt="Handlekurv"></a> 
+            </div>
+    </header>
+    <main>
+        <h1> Kasse </h1>
+        
+        <!--SHOPPINGBAG-->
+        <section id="shoppingbag">
+            <h2>1. SHOPPINGBAGEN DIN</h2>
+            <div class="produktkort">
+                <img src="produkt1.jpg" alt= "Produkt 1">
+                <h3>Produkt 1</h3>
+                <p>Pris: 399,-</p>
+                <p>Farge: Svart</p>
+            </div>
+            <div class="produktkort">
+                <img src="produkt2.jpg" alt= "Produkt 2">
+                <h3>Produkt 2</h3>
+                <p>Pris: 499,-</p>
+                <p>Farge: Rosa</p>
+            </div>
+        </section>
+
+        <!--PERSONOPPLYSNINGER-->
+        <section id="personopplysninger">
+            <form>
+                <label for="fornavn">Fornavn:</label>
+                <input type="text" id="fornavn" name="fornavn" required>
+
+                <label for="etternavn">Etternavn:</label>
+                <input type="text" id="etternavn" name="etternavn" required>
+
+                <label for="adresse">Gateadresse:</label>
+                <input type="text" id="adresse" name="adresse" required>
+
+                <label for="postnummer">Postnummer:</label>
+                <input type="text" id="postnummer" name="postnummer" maxlength="4" minlength="4" required>
+
+                <label for="poststed">Poststed:</label>
+                <input type="text" id="poststed" name="poststed" maxlength="4" minlength="4" required>
+
+                <input type="submit" value="Lagre">
+                <input type="reset" value="Avbryt">
+            </form>
+        </section>
+
+        <!--LEVERING-->
+        <section id="Levering">
+            <h2>Levering</h2>
+            <form>
+                <label>
+                    <input type="radio" name="levering" value="ekspress-hjem" required>
+                    Ekspresslevering hjem
+                </label>
+
+                <label>
+                    <input type="radio" name="levering" value="ekspress-utlevering">
+                    Ekspress pakke til utleveringssted
+                </label>
+
+                <label>
+                    <input type="radio" name="levering" value="standard-hjem">
+                    Standard hjemlevering
+                </label>
+            </form>
+        </section>
+
+        <!--BETALING-->
+        <section id="betalig">
+            <h2>Betaling</h2>
+            <p>Totalbeløp: 998,-</p>
+            <form>
+                <label for="kortnummer">Kortnummer:</label>
+                <input type="text" id="kortnummer" name="kortnummer" maxlength="16" minlength="16" required>
+
+                <label for="utløpsdato">utløpsdato:</label>
+                <input type="month" id="utløpsdato" name="utløpsdato" required>
+
+                <label for="cvc">CVC/CVV:</label>
+                <input type="number" id="cvc" name="cvc" maxlength="3" minlength="3" required>
+
+                <input type="submit" value="Betal">
+            </form>
+
+            <!--SAMTYKKE-->
+            <div class="samtykke">
+                <label>
+                    <input type="chechbox" name="vilkår" required>
+                    Ja, jeg godtar vilkårene
+                </label>
+
+                <label>
+                    <input type="checkbox" name="nyhetsbrev">
+                    Ja takk! Send nyhetsbrev til meg
+                </label>
+                <p>
+                    	Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.
+                </p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
+ 
