@@ -7,10 +7,8 @@
    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Header -->
 <header>
-   <<form class="search-form">
+   <form class="search-form">
     <label for="search">Søk</label>
     <input type="search" placeholder="Søk..." id="søk">
     <input type="submit" value="search">
@@ -31,7 +29,6 @@
 </div>
 </header>
 
-<!-- Brødsmulesti -->
 <nav class="breadcrumb">
    <ul>
        <li><a href="index.html">Hjem</a></li>
@@ -39,20 +36,102 @@
        <li>Produkt</li>
    </ul>
 </nav>
-
-<!-- Hovedområde -->
 <main>
-   <section class="produkt-info">
-       <h1>Produkt</h1>
-       <a href="merke.html">Merke</a>
-       <p>Produktbeskrivelse</p>
-       <div class="produkt-bilder">
+    <!--PRODUKTBILDER-->
+   <section class="produkt-bilder">
+        <!--ETT STORT PRODUKTBILDE-->
+       <div class="stort-bilde">
         <img src="produktbilde.jpg" alt="Stort produktbilde">
        </div>
-       
-       <p>Pris: Kr 499</p>
-       <p>Leveringstid: 2-3 dager</p>
-       <p>Farge: Svart, Hvit, Grå</p>
-   </section>
+       <!--TRE SMÅ PRODUKTBILDER-->
+       <div class="små-bilder">
+            <img src="produktbilde1.jpg" alt="Lite bilde 1">
+            <img src="produktbilde2.jpg" alt="Lite bilde 2">
+            <img src="produktbilde3.jpg" alt="Lite bilde 3">
+       </div>
+    </section>
+    <section class="produkt-info">
+        <h1>Produkt</h1>
+        <a href="merke.html">Merke</a>
+        <p>Produktbeskrivelse</p>
+        <div class="produkt-detaljer">
+            <p>Pris: 499,-</p>
+            <p>Farger: Svart,Hvit,Grå</p>
+        </div>
+    </section>
 </main>
 
+<!-- Lignende produkter -->
+<aside class="lignende-produkter">
+   <h2>Lignende produkter</h2>
+   <div class="produkter">
+    <article class="produktkort1">
+        <img src="lignende1.jpg" alt="Lignende 1">
+        <h3>Produkt 1</h3>
+        <p>Pris: 299,-</p>
+    </article>
+
+    <article class="produktkort2">
+        <img src="lignende2.jpg" alt="Lignende 2">
+        <h3>Produkt 2</h3>
+        <p>Pris: 399,-</p>
+    </article>
+
+    <article class="produktkort3">
+        <img src="lignende3.jpg" alt="Lignende 3">
+        <h3>Produkt 3</h3>
+        <p>Pris: 499,-</p>
+    </article>
+
+    <article class="produktkort4">
+        <img src="lignende4.jpg" alt="Lignende 4">
+        <h3>Produkt 4</h3>
+        <p>Pris: 599,-</p>
+    </article>
+   </div>
+ 
+</aside>
+
+<!-- Footer -->
+<footer>
+    <section class="footer-logo">
+        <img src="logo.png" alt="Logo">
+        <p>Din nettbutikk for kvalitetsprodukter!</p>
+        </section>
+
+        <section class="footer-kontakt">
+            <h2>Kontakt</h2>
+            <address>
+                <p>Adresse: B R A Veien 4, 1757 Halden </p>
+                <p>Telefon: 123 45 678</p>
+                <p>E-post: kontakt@nettbutikk.no</p>
+            </address>
+        </section>
+
+        <section class="footer-snarveier">
+            <h2>Snarveier</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer-sosiale-medier">
+            <h2>Følg oss</h2>
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+
+            </ul>
+        </section>
+   <section>
+       <h3>Tilgjengelighetserklæring</h3>
+       <p><a href="tilgjengelighetserklaering.pdf">Les vår tilgjengelighetserklæring</a></p>
+   </section>
+</footer>
