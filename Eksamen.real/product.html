@@ -5,29 +5,40 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Produkt</title>
    <link rel="stylesheet" href="styles.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-<header>
-   <form class="search-form">
-    <label for="search">Søk</label>
-    <input type="search" placeholder="Søk..." id="søk">
-    <input type="submit" value="search">
-</form>
-<nav class="meny">
-    <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="#">Produkter</a></li>
-        <li><a href="#">Kategorier</a></li>
-        <li><a href="#">Kontakt oss</a></li>
-    </ul>
-</nav>
-<div class="header-icons">
-    <a href="#"><img src="home-icon.png" alt="Hjem"></a>
-    <a href="#"><img src="favorites-icon.png" alt="Favoritter"></a>
-    <a href="#"><img src="customer-service-icon.png" alt="Kundeservice"></a>
-    <a href="checkout.html"><img src="ikoner/shopping.cart.png" alt="Handlekurv"></a> 
-</div>
-</header>
+    <header>
+        <div class="header-container">
+            <form class="search-form">
+                <input type="search" placeholder="Søk her" id="search">
+                <button type="submit" class="search-button">
+                    <img src="" alt="Søk">
+                </button>
+    
+            </form>
+            <nav class="meny">
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#">Produkter</a></li>
+    
+                    <li class="logo">
+                        <a href="index.html">LOGO</a>
+                    </li>
+    
+    
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><img src="ikoner/profil.png" alt="profil"></a>
+                <a href="#"><img src="ikoner/favorite.png" alt="Favoritter">
+                <a href="checkout.html"><img src="ikoner/shoppingcart.png" alt="Handlekurv"></a> 
+            </div>
+        </div>
+        </header>
 
 <nav class="breadcrumb">
    <ul>
@@ -38,27 +49,31 @@
 </nav>
 <main>
     <!--PRODUKTBILDER-->
-   <section class="produkt-bilder">
-        <!--ETT STORT PRODUKTBILDE-->
-       <div class="stort-bilde">
-        <img src="random.jpg" alt="Stort produktbilde">
-       </div>
-       <!--TRE SMÅ PRODUKTBILDER-->
-       <div class="små-bilder">
-            <img src="random.jpg" alt="Lite bilde 1">
-            <img src="random.jpg" alt="Lite bilde 2">
-            <img src="random.jpg" alt="Lite bilde 3">
-       </div>
-    </section>
-    <section class="produkt-info">
-        <h1>Produkt</h1>
-        <a href="merke.html">Merke</a>
-        <p>Produktbeskrivelse</p>
-        <div class="produkt-detaljer">
-            <p>Pris: 499,-</p>
-            <p>Farger: Svart,Hvit,Grå</p>
-        </div>
-    </section>
+    <div class="produkt-container">
+        <section class="produkt-bilder">
+            <!--ETT STORT PRODUKTBILDE-->
+           <div class="stort-bilde">
+            <img src="random.jpg" alt="Stort produktbilde">
+           </div>
+           <!--TRE SMÅ PRODUKTBILDER-->
+           <div class="små-bilder">
+                <img src="random.jpg" alt="Lite bilde 1">
+                <img src="random.jpg" alt="Lite bilde 2">
+                <img src="random.jpg" alt="Lite bilde 3">
+           </div>
+        </section>
+        <section class="produkt-info">
+            <h1>Produkt</h1>
+            <a href="merke.html">Merke</a>
+            <p>Produktbeskrivelse</p>
+            <div class="produkt-detaljer">
+                <p>Pris: 499,-</p>
+                <p>Farger: Svart,Hvit,Grå</p>
+            </div>
+        </section>
+
+    </div>
+   
 </main>
 
 <!-- Lignende produkter -->

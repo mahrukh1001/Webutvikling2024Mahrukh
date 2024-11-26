@@ -1,6 +1,6 @@
-/* Grunnleggende oppsett */ 
+/* GRUNNLEGGENDE OPPSETT */
 body {
-    font-family: sans-serif, Arial, Helvetica;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,72 +11,334 @@ a {
     color: inherit;
 }
 
+/* HEADER */
 header {
+    padding: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 24px;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-form input[type="search"],
+.search-form button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-form input[type=search]{
+    flex: 1;
+    border-right: none;
+}
+
+.search-form button {
+    background-color: #f1f1f1;
+    cursor: pointer; 
+}
+
+.search-form button:hover{
+    background-color: #e1e1e1;
+}
+
+
+
+.meny ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.meny ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+
+.meny ul li a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header-icons{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.header-icons a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer .footer-kontakt, footer .footer-snarveier{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+footer .footer-kontakt h3, footer .footer-snarveier h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+footer .footer-kontakt address, footer .footer-snarveier ul{
+    font-size: 14px;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer .footer-snarveier ul{
+    list-style: none;
+    padding: 0;
+    line-height: 1.7;
+   
+    
+}
+
+footer .footer-snarveier ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+footer .footer-snarveier ul li a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+footer .footer-sosiale-medier{
+    margin-left: 24px;
+    margin-top: 24px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer-sosiale-medier h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-sosiale-medier a{
+    margin-right: 16px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-sosiale-medier a:hover{
+    color: #000;
+}
+
+
+
+
+
+footer .footer-logo{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.footer-logo p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FLEX UTILITIES */
+.flex-column {
+    display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* BOX-STIL */
+.box {
+    border: 1px solid #ccc;
     padding: 16px;
+    border-radius: 4px;
     background-color: #f9f9f9;
 }
 
-header .search-form{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-header .search-form input[type="search"],
-header .search-form input[type="submit"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-header .meny ul{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 0;
-    list-style-type: none;
-}
-
-header.meny ul li a{
-    padding: 10px;
-    border: 1px solid transparent;
-    transition: border-color 0.2s;
-}
-
-
-header .meny ul li a:hover{
-    border-color: #000;
-}
-
-/* Footer */
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
-    background-color: #f4f4f4;
-}
-
-footer section{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/* Banner */
+/* BANNER */
 .banner {
     background-color: #e0e0e0;
     padding: 16px;
     text-align: right;
 }
 
-.banner a{
+.banner a {
     display: inline-block;
     background-color: #fff;
     color: #000;
@@ -87,4 +349,335 @@ footer section{
     margin-top: 8px;
 }
 
+/* PRODUKTSEKSJONER */
+.produkt-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 16px;
+}
 
+.produkt-bilder{
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stort-bilde img{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.små-bilder{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+
+.små-bilder img{
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.produkt-info{
+    max-width: 440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* POPULÆRE KATEGORIER */
+#populære-kategorier {
+    padding: 16px;
+}
+
+.kategorier {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+.kateogri1, .kategori2, .kategori3{
+    flex: 1 1 calc(33.333% - 16px);
+    max-width: 386px;
+}
+.kategori4{
+    flex: 1 1 calc(66.666% - 16px);
+    max-width: 864px;
+}
+.kategori5{
+    flex: 1 1 calc(3333.333%_16px);
+    max-width: 300px;
+}
+.kateogori {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.kategori img{
+    width: 100%;
+    height: auto;
+   
+}
+
+
+.kategori h3{
+    font-size: 1.rem;
+    margin: 8px 0;
+    color: #333;
+
+}
+
+/* ANMELDELSER */
+#anmeldelser {
+    padding: 16px;
+    background-color: #fff;
+}
+
+#anmeldelser h2{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.anmeldelse-kort-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.anmeldelse-kort{
+    flex: 1 1 calc(25% - 16px);
+    max-width: 289px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+    padding: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anmeldelse-kort:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.anmeldelse-kort img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    
+}
+.anmeldelse-kort h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.anmeldelse-kort p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* BRØDMULESTIEN */
+.breadcrumb ul {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.breadcrumb ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb ul li:not(:last-child)::after {
+    content: '\f138';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 8px;
+}
+
+/* PRODUKTBILDER */
+.produkt-bilder {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px;
+}
+
+.produkt-bilder img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* PRODUKTINFORMASJON */
+.produkt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.produkt-info h1 {
+    font-size: 24px;
+}
+
+.produkt-info .produkt-detaljer p {
+    margin: 4px 0;
+}
+
+
+.produkter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.produkter article {
+    flex: 1 1 calc(25% - 2rem);
+    max-width: 350px;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: left;
+    padding: 16px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produkter article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.produkter img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 8px;
+}
+
+.produkter h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.produkter p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+/* MEDIA-SPØRRINGER FOR PRODUKTGRID */
+@media (min-width: 800px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search-form {
+        flex-direction: row;
+    }
+
+    .search-form input[type="search"] {
+        width: 300px;
+    }
+
+    .meny ul {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .produkter article{
+        flex: 1 1 calc(33.333%- 2rem);
+    }
+    
+    
+
+}
+@media (max-width: 1024px) {
+    .produkter article {
+        flex: 1 1 calc(33.333% - 2rem); /* 3 kolonner på medium skjerm */
+    }
+    .kategori1, .kategori2, .kategori3, .kategori4, .kategori5{
+        flex: 1 1 calc(50% - 16px);
+    }
+    .anmeldelse-kort{
+        flex: 1 1 calc(33.333% - 16px);
+    }
+}
+
+@media (max-width: 768px) {
+    .produkter article {
+        flex: 1 1 calc(50% - 2rem); /* 2 kolonner på liten skjerm */
+    }
+    .kategori1, .kategori2, .kategori3, .kategori4, .kategori5{
+        flex: 1 1 100%;
+    }
+    .anmeldelse-kort{
+        flex: 1 1 calc(50%-16px);
+    }
+    .produkt-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produkt-bilder{
+        max-width: 100%;
+    }
+
+    .produkt-info{
+        max-width: 100%;
+    }
+    .små-bilder{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .produkter article {
+        flex: 1 1 100%; /* Full bredde for små skjermer */
+    }
+    .anmeldelse-kort{
+        flex: 1 1 100%;
+    }
+    .små-bilder img{
+        max-width: 100px;
+    }
+}

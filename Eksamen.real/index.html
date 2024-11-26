@@ -10,15 +10,18 @@
 </head>
 <body>
     <header>
+    <div class="header-container">
         <form class="search-form">
-            <label for="search">Søk</label>
-            <input type="search" placeholder="Søk..." id="search">
-            <input type="submit" value="search">
+            <input type="search" placeholder="Søk her" id="search">
+            <button type="submit" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
         </form>
         <nav class="meny">
             <ul>
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
+                <li><a href="product.html">Produkter</a></li>
 
                 <li class="logo">
                     <a href="index.html">LOGO</a>
@@ -30,57 +33,57 @@
             </ul>
         </nav>
         <div class="header-icons">
-            <a href="#"><img src="home-icon.png" alt="Hjem"></a>
-            <a href="#"><i class="fa-regular fa-heart"></i> Favoritter</a>
-            <a href="#"><img src="customer-service-icon.png" alt="Kundeservice"></a>
-            <a href="checkout.html"><img src="ikoner/shopping.cart.png" alt="Handlekurv"></a> 
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a> 
         </div>
+    </div>
     </header>
     <main>
         <section class="banner">
             <h2>Velkommen til vår nettbutikk!</h2>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <a href="populære-produkter">Utforsk nå</a>
+            <a href="populære-produkter">Les mer</a>
         </section>
 
 
         <!--POPULÆRE PRODUKTER-->
         <section id="populære-produkter">
-            <h2>De mest populære produktene</h2>
+            <h2>Våre mest populære produktene</h2>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             <aside class="kategori-links"> 
-                <a href="#kategori1">Kategori 1</a>
-                <a href="#kategori2">Kategori 2</a>
-                <a href="kategori3">Kategori 3</a>
+                <a href="#kategori1">New Product</a>
+                <a href="#kategori2">Special Price</a>
+                <a href="kategori3">Best sellers</a>
             </aside>
             <div class="produkter">
                 <article class="produktkort1">
-                    <img src="produkt1.jpg" alt="Produkt 1">
+                    <img src="random.jpg" alt="Produkt 1">
                     <h3>Produkt 1</h3>
                     <p>Pris: 249,-</p>
                 </article>
                 <article class="produktkort2">
-                    <img src="produkt2.jpg" alt="Produkt 2">
+                    <img src="random.jpg" alt="Produkt 2">
                     <h3>Produkt 2</h3>
                     <p>Pris: 249,-</p>
                 </article>
                 <article class="produktkort3">
-                    <img src="produkt3.jpg" alt="Produkt 3">
+                    <img src="random.jpg" alt="Produkt 3">
                     <h3>Produkt 3</h3>
                     <p>Pris: 249,-</p>
                 </article>
                 <article class="produktkort4">
-                    <img src="produkt4.jpg" alt="Produkt 4">
+                    <img src="random.jpg" alt="Produkt 4">
                     <h3>Produkt 4</h3>
                     <p>Pris: 249,-</p>
                 </article>
                 <article class="produktkort5">
-                    <img src="produkt5.jpg" alt="Produkt 5">
+                    <img src="random.jpg" alt="Produkt 5">
                     <h3>Produkt 5</h3>
                     <p>Pris: 249,-</p>
                 </article>
                 <article class="produktkort6">
-                    <img src="produkt6.jpg" alt="Produkt 6">
+                    <img src="random.jpg" alt="Produkt 6">
                     <h3>Produkt 6</h3>
                     <p>Pris: 249,-</p>
                 </article>
@@ -91,87 +94,99 @@
         <section id="populære-kategorier">
             <h2>Våre mest populære kategorier</h2>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <article>
-                <h3>Kategori 1</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-                <img src="random.jpg" alt="Kategori 1 bilde">
-            </article>
+            <div class="kategorier">
+                <article class="kategori kategori1">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="random.jpg" alt="Kategori 1 bilde">
+                    <h3>Kategori 1</h3>
+                </article>
+    
+                <article class="kategori kategori2">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="random.jpg" alt="Kategori 2 bilde">
+                    <h3>Kategori 2</h3>
+                </article>
+    
+                <article class="kategori kategori3">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="random.jpg" alt="Kategori 3 bilde">
+                    <h3>Kategori 3</h3>
+                </article>
 
-            <article>
-                <h3>Kategori 2</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-                <img src="random.jpg" alt="Kategori 2 bilde">
-            </article>
+                <article class="kategori kategori4">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="random.jpg" alt="Kategori 4 bilde">
+                    <h3>Kategori 4</h3>
+                </article>
 
-            <article>
-                <h3>Kategori 3</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-                <img src="random.jpg" alt="Kategori 3 bilde">
-            </article>
+                <article class="kategori kategori5">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="random.jpg" alt="Kategori 5 bilde">
+                    <h3>Kategori 5</h3>
+                </article>
+            </div>   
         </section>
 
         <!--ANMELDELSER-->
         <section id="anmeldelser">
             <h2>Anmeldelser</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae nulla eget odio facilisis aliquet.</p>
-            <article>
-                <img src="random.jpg" alt="Kunde 1 bilde">
-                <h3>Rober Labrador</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
-            </article>
-            <article>
-                <img src="random.jpg" alt="Kunde 2 bilde">
-                <h3>Rober Labrador</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
-            </article>
-            <article>
-                <img src="random.jpg" alt="Kunde 3 bilde">
-                <h3>Rober Labrador</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
-            </article>
-            <article>
-                <img src="random.jpg" alt="Kunde 4 bilde">
-                <h3>Rober Labrador</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
-            </article>
+            <div class="anmeldelse-kort-container">
+                <article class="anmeldelse-kort">
+                    <img src="random.jpg" alt="Kunde 1 bilde">
+                    <h3>Rober Labrador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
+                </article>
+                <article class="anmeldelse-kort">
+                    <img src="random.jpg" alt="Kunde 2 bilde">
+                    <h3>Rober Labrador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
+                </article>
+                <article class="anmeldelse-kort">
+                    <img src="random.jpg" alt="Kunde 3 bilde">
+                    <h3>Rober Labrador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
+                </article>
+                <article class="anmeldelse-kort">
+                    <img src="random.jpg" alt="Kunde 4 bilde">
+                    <h3>Rober Labrador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
         <section class="footer-logo">
-        <img src="logo.png" alt="Logo">
-        <p>Din nettbutikk for kvalitetsprodukter!</p>
+                <a href="#">LOGO</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla.</p>
         </section>
 
-        <section class="footer-kontakt">
-            <h2>Kontakt</h2>
-            <address>
-                <p>Adresse: B R A Veien 4, 1757 Halden </p>
-                <p>Telefon: 123 45 678</p>
-                <p>E-post: kontakt@nettbutikk.no</p>
-            </address>
-        </section>
+        <section class="footer-main">
+            <section class="footer-kontakt">
+                <h3>Kontakt</h3>
+                <address>
+                    <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                    <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 60 80 00</p>
+                    <p><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no</p>
+                    <p><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00</p>
+                </address>
+            </section>
 
         <section class="footer-snarveier">
-            <h2>Snarveier</h2>
-            <nav>
+            <h3>Snarveier</h3>
                 <ul>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="product.html">Produkter</a></li>
+                    <li><a href="#">Produkter</a></li>
                     <li><a href="#">Kategorier</a></li>
                     <li><a href="#">Kontakt oss</a></li>
                 </ul>
-            </nav>
+            </section>
         </section>
 
         <section class="footer-sosiale-medier">
-            <h2>Følg oss</h2>
-            <ul>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
-
-            </ul>
+            <h3>SOSIALE MEDIER</h3>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
         </section>
     </footer>
 </body>
