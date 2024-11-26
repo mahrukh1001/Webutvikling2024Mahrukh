@@ -238,9 +238,33 @@ footer .footer-logo{
 }
 
 
+.produkter{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    align-items: center;
+}
 
+.produkter article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
 
+}
 
+.produkter img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
 
 
 
@@ -253,113 +277,150 @@ footer .footer-logo{
 
 
 
+#populære-kategorier{
+    padding: 16px;
+    display:flex;
+    flex-direction: column;
+    
+}
 
+.kategorier{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.kategorier article {
+    border: 1px solid black;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 600px;
+    gap:16px;
+}
 
+.kategorier img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
 
+#anmeldelser{
+    padding: 16px;
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FLEX UTILITIES */
-.flex-column {
+.anmeldelse-kort-container{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.flex-row {
+.anmeldelse-kort{
     display: flex;
-    flex-direction: row;
     gap: 16px;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-/* BOX-STIL */
-.box {
-    border: 1px solid #ccc;
+    border: 1px solid black;
     padding: 16px;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 600px;
+
 }
+
+
+.anmeldelse-kort img{
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.anmeldelse-kort p{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.anmeldelse-kort h3{
+   margin: 0 0 px 0;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.anmeldelse-kort img{
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+article {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* BANNER */
 .banner {
@@ -377,337 +438,4 @@ footer .footer-logo{
     border-radius: 5px;
     text-decoration: none;
     margin-top: 8px;
-}
-
-/* PRODUKTSEKSJONER */
-.produkt-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 16px;
-    align-items: flex-start;
-    padding: 16px;
-}
-
-.produkt-bilder{
-    max-width: 700px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.stort-bilde img{
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-}
-
-.små-bilder{
-    display: flex;
-    gap: 8px;
-    justify-content: flex-start;
-}
-
-
-.små-bilder img{
-    max-width: 160px;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-}
-
-.produkt-info{
-    max-width: 440px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-
-/* POPULÆRE KATEGORIER */
-#populære-kategorier {
-    padding: 16px;
-}
-
-.kategorier {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-    padding: 16px;
-}
-.kateogri1, .kategori2, .kategori3{
-    flex: 1 1 calc(33.333% - 16px);
-    max-width: 386px;
-}
-.kategori4{
-    flex: 1 1 calc(66.666% - 16px);
-    max-width: 864px;
-}
-.kategori5{
-    flex: 1 1 calc(3333.333%_16px);
-    max-width: 300px;
-}
-.kateogori {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-align: center;
-    overflow: hidden;
-
-}
-
-.kategori img{
-    width: 100%;
-    height: auto;
-   
-}
-
-
-.kategori h3{
-    font-size: 1.rem;
-    margin: 8px 0;
-    color: #333;
-
-}
-
-/* ANMELDELSER */
-#anmeldelser {
-    padding: 16px;
-    background-color: #fff;
-}
-
-#anmeldelser h2{
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.anmeldelse-kort-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-}
-
-.anmeldelse-kort{
-    flex: 1 1 calc(25% - 16px);
-    max-width: 289px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-align: left;
-    padding: 16px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.anmeldelse-kort:hover{
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.anmeldelse-kort img {
-    width: 100%;
-    height: auto;
-    max-height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    
-}
-.anmeldelse-kort h3{
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.anmeldelse-kort p{
-    font-size: 14px;
-    color: #666;
-    line-height: 1.4;
-}
-
-/* BRØDMULESTIEN */
-.breadcrumb ul {
-    display: flex;
-    gap: 8px;
-    font-size: 14px;
-}
-
-.breadcrumb ul li a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.breadcrumb ul li:not(:last-child)::after {
-    content: '\f138';
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-left: 8px;
-}
-
-/* PRODUKTBILDER */
-.produkt-bilder {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: 16px;
-}
-
-.produkt-bilder img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* PRODUKTINFORMASJON */
-.produkt-info {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 16px;
-    padding: 16px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-}
-
-.produkt-info h1 {
-    font-size: 24px;
-}
-
-.produkt-info .produkt-detaljer p {
-    margin: 4px 0;
-}
-
-
-.produkter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    padding: 16px 0;
-}
-
-.produkter article {
-    flex: 1 1 calc(25% - 2rem);
-    max-width: 350px;
-    margin: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-    text-align: left;
-    padding: 16px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.produkter article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.produkter img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 8px;
-}
-
-.produkter h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.produkter p {
-    font-size: 16px;
-    color: #666;
-    margin: 0;
-}
-
-/* MEDIA-SPØRRINGER FOR PRODUKTGRID */
-@media (min-width: 800px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header-container {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .search-form {
-        flex-direction: row;
-    }
-
-    .search-form input[type="search"] {
-        width: 300px;
-    }
-
-    .meny ul {
-        flex-direction: row;
-        gap: 24px;
-    }
-    .produkter article{
-        flex: 1 1 calc(33.333%- 2rem);
-    }
-    
-    
-
-}
-@media (max-width: 1024px) {
-    .produkter article {
-        flex: 1 1 calc(33.333% - 2rem); /* 3 kolonner på medium skjerm */
-    }
-    .kategori1, .kategori2, .kategori3, .kategori4, .kategori5{
-        flex: 1 1 calc(50% - 16px);
-    }
-    .anmeldelse-kort{
-        flex: 1 1 calc(33.333% - 16px);
-    }
-}
-
-@media (max-width: 768px) {
-    .produkter article {
-        flex: 1 1 calc(50% - 2rem); /* 2 kolonner på liten skjerm */
-    }
-    .kategori1, .kategori2, .kategori3, .kategori4, .kategori5{
-        flex: 1 1 100%;
-    }
-    .anmeldelse-kort{
-        flex: 1 1 calc(50%-16px);
-    }
-    .produkt-container{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .produkt-bilder{
-        max-width: 100%;
-    }
-
-    .produkt-info{
-        max-width: 100%;
-    }
-    .små-bilder{
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .produkter article {
-        flex: 1 1 100%; /* Full bredde for små skjermer */
-    }
-    .anmeldelse-kort{
-        flex: 1 1 100%;
-    }
-    .små-bilder img{
-        max-width: 100px;
-    }
 }
